@@ -328,27 +328,24 @@ public class VideoAnalytics {
 	 */
 	public int[] getBestRunViewCount(int n) {
 		if (viewCount == null || viewCount.length < n) return null;
-		int besttot = 0; //The highest total achieved by a run
-		int bestind = 0; //Index for location of best run
-		int[] result = new int[n]; //Generate the result array with n size
-		for (int i = 0; i < viewCount.length-n; i++) { //Go through each index in viewCounts...
-			if (getViewCountRunTotal(i, n) > besttot) {
-				bestind = i;
-				besttot = getViewCountRunTotal(i,n);
+		int hightot = 0;
+		int highval = 0;
+		int[] result= new int[n];
+		for (int i = 0; i < viewCount.length-n; i++) {
+			int thistotal = 0;
+			for (int a = 0; a < n; a++) {
+				thistotal+= viewCount[a];
+			}
+			if (thistotal > hightot) {
+				hightot = thistotal;
+				highval = i;
 			}
 		}
-		for (int x = 0; x < result.length; x++) { //Get run at recorded index
-			result[x] = viewCount[x+bestind+1];
+		for (int i = 0; i < n; i++) {
+			result[i] = viewCount[i+highval];
 		}
-		return result; //Returns the result
-	}
-	
-	public int getViewCountRunTotal(int loc, int size) { //Returns sum for size-length sequence at loc
-		int result = 0;
-		for (int i = 0; i < size; i ++) {
-			result += viewCount[i+loc];
-		}
-		return result;
+		result[0] = viewCount[0];
+		return result; //to be completed
 	}
 
 	/**

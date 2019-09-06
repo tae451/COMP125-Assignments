@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VideoAnalyticsTest.testSumViewCounts" project="assignment1" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="assignment1.VideoAnalyticsTest" time="0.048" displayname="VideoAnalyticsTest" uniqueid="[engine:junit-jupiter]/[class:assignment1.VideoAnalyticsTest]">
+    <testcase name="testSumViewCounts" classname="assignment1.VideoAnalyticsTest" time="0.048" displayname="testSumViewCounts()" uniqueid="[engine:junit-jupiter]/[class:assignment1.VideoAnalyticsTest]/[method:testSumViewCounts()]"/>
+  </testsuite>
+</testrun>

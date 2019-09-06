@@ -1,0 +1,17 @@
+INDEX VERSION 1.131+/home/amarok/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+3441040766.index
+1017442445.index
+2565318932.index
+1864984192.index
+248344323.index
+3120000929.index
+3534701419.index
+2691523118.index
+1677332433.index
+1495479872.index
+3681925173.index
+527338264.index
+845730864.index
+1501827774.index
+474203571.index
+1597283800.index
